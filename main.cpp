@@ -107,18 +107,18 @@ void Update() {
     float deltaTime = ticks - lastTicks;
     lastTicks = ticks;
 
-    if (ticks <= 1)
-    {
-        player_rotate = float(5 / 2) * (ticks * ticks);
-        player_rotate *= 20;
-    }
-    else if (ticks <= 2.0)
-    {
-        player_rotate = float(-5.0f * ticks * ticks) + float(15 * ticks);
-        player_rotate *= 20;
-    }
+    //if (ticks <= 1)
+    //{
+    //    player_rotate = float(5 / 2) * (ticks * ticks);
+    //    player_rotate *= 20;
+    //}
+    //else if (ticks <= 2.0)
+    //{
+    //    player_rotate = float(-5.0f * ticks * ticks) + float(15 * ticks);
+    //    player_rotate *= 20;
+    //}
 
-   /*
+   
    if (slowDown)
     {
         if (rotationDegrees >= 90)
@@ -153,7 +153,7 @@ void Update() {
         slowDown = true;
     }
 
-    player_rotate -= rotationDegrees * deltaTime;*/
+    player_rotate -= rotationDegrees * deltaTime;
     
     modelMatrix = glm::mat4(1.0f);  
 
